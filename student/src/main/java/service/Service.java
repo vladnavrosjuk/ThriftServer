@@ -1,7 +1,11 @@
-import org.apache.thrift.TException;
+package service;
+
+import entity.Facultet;
+import entity.Student;
+import entity.Univer;
 
 public class Service {
-    public Student setStudent(String name,String surname, String group, String facultet, String srbal, String number,String university,String sphere,String spec){
+    public Student setStudent(String name, String surname, String group, String facultet, String srbal, String number, String university, String sphere, String spec){
         Student student = new Student();
         Facultet facultet1 = new Facultet();
         Univer univercity = new Univer();

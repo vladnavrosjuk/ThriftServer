@@ -7,6 +7,7 @@ import org.apache.thrift.transport.TSocket;
 import org.apache.thrift.transport.TSSLTransportFactory.TSSLTransportParameters;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TProtocol;
+import service.StudentService;
 
 public class JavaClient {
     public static void main(String[] args) {
@@ -40,7 +41,7 @@ public class JavaClient {
             TProtocol protocol = new TBinaryProtocol(transport);
             StudentService.Client client2 = new StudentService.Client(protocol);
             View view = new View(client2);
-        /*    Calculator.Client client = new Calculator.Client(protocol);*/
+        /*    entity.Calculator.Client client = new entity.Calculator.Client(protocol);*/
 
            /* perform(client);*/
 

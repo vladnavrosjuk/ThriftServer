@@ -1,4 +1,8 @@
+package imp;
+
+import entity.Student;
 import org.apache.thrift.TException;
+import service.StudentService;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -29,7 +33,7 @@ public class StudentHandler implements StudentService.Iface {
             bw.write("Univercity" + student.getUnivercity().getName()+"\n");
             bw.write("Sphere" + student.getUnivercity().getSphere()+"\n");
             bw.write("Group: " + student.getUnivercity().getFacultet().getGroup() + "\n");
-            bw.write("Facultet: " + student.getUnivercity().getFacultet().getNamefacultet() + "\n");
+            bw.write("entity.Facultet: " + student.getUnivercity().getFacultet().getNamefacultet() + "\n");
             bw.write("Speciality: " + student.getUnivercity().getFacultet().getNamespeciality() + "\n");
 
             bw.write("Sr.Bal: " + student.getSrbal() + "\n");
